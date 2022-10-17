@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['middleware' => 'response_formatter'], function () {
-    Route::post('/upload', [App\Api\Controllers\EmployeeController::class, 'topMatches']);
+    Route::post('/employee', [App\Api\Controllers\EmployeeController::class, 'topMatches']);
 });
 
 

@@ -35,7 +35,7 @@ document.getElementById("processButton").onclick = () => {
     let formData = new FormData();
     formData.set('file', file);
 
-    axios.post("http://localhost/api/upload", formData, {
+    axios.post("http://localhost/api/employee", formData, {
         onUploadProgress: progressEvent => {
             const percentCompleted = Math.round(
             (progressEvent.loaded * 100) / progressEvent.total

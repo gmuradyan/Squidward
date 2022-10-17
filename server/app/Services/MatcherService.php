@@ -32,10 +32,9 @@ class MatcherService implements IMatcherService
             array_push($collected_pair_list, [[$employees[0], $employees[1]]]);
 
         } else if (count($employees) == 3) {
-            array_push($collected_pair_list, [$employees[0], $employees[1]]);
-            array_push($collected_pair_list, [$employees[0], $employees[2]]);
-            array_push($collected_pair_list, [$employees[1], $employees[2]]);
-
+            array_push($collected_pair_list, [[$employees[0], $employees[1]]]);
+            array_push($collected_pair_list, [[$employees[0], $employees[2]]]);
+            array_push($collected_pair_list, [[$employees[1], $employees[2]]]);
         } else {
             for ($i = 0; $i < count($employees) - 1; $i++) {
                 $employee_mutable_list = $employees;
