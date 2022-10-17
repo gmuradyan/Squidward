@@ -9,8 +9,6 @@ Inital set up
 
 Up server
 1. docker-compose up -d ngnix
-2. docker-compose exec workspace bash
-3. php artisan serve
 
 Open http://localhost
 
